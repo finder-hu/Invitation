@@ -32,7 +32,7 @@
 					</label>
 				</span>
 				<span class="input input--juro">
-					<input class="input__field input__field--juro" id="demo" type="text" name="tel" />
+					<input class="input__field input__field--juro" onkeydown="onlyNum();" type="text" name="tel" />
 					<label class="input__label input__label--juro">
 						<span class="input__label-content input__label-content--juro">电话</span>
 					</label>
@@ -45,7 +45,7 @@
 				</span>
 				</section>
 
-				<input type="button"  onclick="myFunction()" value="加入"><input type="reset" value="清除">
+				<input type="submit" value="加入"><input type="reset" value="清除">
 			</form>
 
 		</div><!-- /container -->
@@ -75,22 +75,8 @@
 				inputEl.addEventListener( 'focus', onInputFocus );
 				inputEl.addEventListener( 'blur', onInputBlur );
 			} );
-
 			function onInputFocus( ev ) {
 				classie.add( ev.target.parentNode, 'input--filled' );
-			}
-
-			function myFunction()
-			{
-				var x=document.getElementById("demo").value;
-				if(x==""||isNaN(x))
-				{
-					alert("telephone number is incorrect!");
-				}
-				else
-				{
-					submit();
-				}
 			}
 
 			function onInputBlur( ev ) {
@@ -99,6 +85,13 @@
 				}
 			}
 		})();
+	</script>
+	<script language=javascript>
+	function onlyNum()
+	{
+ 		 if(!((event.keyCode>=48&&event.keyCode<=57)||(event.keyCode>=96&&event.keyCode<=105)))
+   		 event.returnValue=false;
+	}
 	</script>
 	</body>
 </html>
