@@ -8,8 +8,18 @@
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" href="css/audioplayer.css" />
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script>
+		/*
+			iOS浏览BUG修复
+			by @mathias, @cheeaun and @jdalton
+		*/
+		(function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
+	</script>
 </head>
+
 <body>
 	<header class="cd-header">
 		<div class="cd-logo"><a href="http://www.lxyz.net/"><img src="img/lxyzlogo.jpg" height="50" width="50" alt="Logo"></a></div>
@@ -38,7 +48,7 @@
 	<section class="cd-intro">
 		<h1><em><a href="introduce/index.html">成都校友会请柬</a></em></h1>
 	</section>
-
+		
 	<main class="cd-main-content">
 		<div class="cd-container">
 			</p><p>School mate party of lixian No.1 middle school</p>
@@ -51,6 +61,14 @@
 			<p>
 				<br/>
 			</p>
+		</div>
+		<div class="htmleaf-content bgcolor-3">
+			<div id="wrapper">
+				<audio src="audio/seeyouagain.mp3" preload="auto" autoplay="autoplay" controls></audio>
+				<script src="js/jquery.min.js"></script>
+				<script src="js/audioplayer.js"></script>
+				<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+			</div>
 		</div>
 	</main>
 <script src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js"></script>
