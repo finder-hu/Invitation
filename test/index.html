@@ -26,13 +26,13 @@
 				<section class="content bgcolor-6">
 					<h2>我的信息</h2>
 				<span class="input input--juro">
-					<input class="input__field input__field--juro" type="text" name="name" />
+					<input class="input__field input__field--juro"  type="text" name="name" />
 					<label class="input__label input__label--juro">
 						<span class="input__label-content input__label-content--juro">姓名</span>
 					</label>
 				</span>
 				<span class="input input--juro">
-					<input class="input__field input__field--juro" type="text" name="tel" />
+					<input class="input__field input__field--juro" id="demo" type="text" name="tel" />
 					<label class="input__label input__label--juro">
 						<span class="input__label-content input__label-content--juro">电话</span>
 					</label>
@@ -45,7 +45,7 @@
 				</span>
 				</section>
 
-				<input type="submit" value="加入"><input type="reset" value="清除">
+				<input type="button"  onclick="myFunction()" value="加入"><input type="reset" value="清除">
 			</form>
 
 		</div><!-- /container -->
@@ -78,6 +78,19 @@
 
 			function onInputFocus( ev ) {
 				classie.add( ev.target.parentNode, 'input--filled' );
+			}
+
+			function myFunction()
+			{
+				var x=document.getElementById("demo").value;
+				if(x==""||isNaN(x))
+				{
+					alert("telephone number is incorrect!");
+				}
+				else
+				{
+					submit();
+				}
 			}
 
 			function onInputBlur( ev ) {
