@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
@@ -17,11 +17,11 @@
 	<table border=1>
 		<div class="container">
 			<header class="codrops-header">
-				<h2>我要参加校友会<br> <span>I want to join in!</span></h2>
+				<h2>我要给新人送上祝福<br> <span>Blessing to them!</span></h2>
 				<a href="../index.html"><h2>回到主页</h2></a></p>
-				<br><a href="testmysql.php"><h2>查看已登记人员</h2></a></p>
+				<br><a href="view.php"><h2>查看所有祝福语</h2></a></p>
 			</header>
-			<form method="post" action="post.php" name="adpeople">
+			<form method="post" action="save.php" name="adpeople">
 
 				<section class="content bgcolor-6">
 					<h2>我的信息</h2>
@@ -32,15 +32,9 @@
 					</label>
 				</span>
 				<span class="input input--juro">
-					<input class="input__field input__field--juro" onkeydown="onlyNum();" type="text" name="tel" />
+					<input class="input__field input__field--juro" type="text" name="blessing" />
 					<label class="input__label input__label--juro">
-						<span class="input__label-content input__label-content--juro">电话</span>
-					</label>
-				</span>
-				<span class="input input--juro">
-					<input class="input__field input__field--juro" type="text" name="message" />
-					<label class="input__label input__label--juro">
-						<span class="input__label-content input__label-content--juro">留言</span>
+						<span class="input__label-content input__label-content--juro">祝福</span>
 					</label>
 				</span>
 				</section>
