@@ -26,13 +26,13 @@
 				<section class="content bgcolor-6">
 					<h2>我的信息</h2>
 				<span class="input input--juro">
-					<input class="input__field input__field--juro" type="text" name="name" />
+					<input class="input__field input__field--juro"  type="text" name="name" />
 					<label class="input__label input__label--juro">
 						<span class="input__label-content input__label-content--juro">姓名</span>
 					</label>
 				</span>
 				<span class="input input--juro">
-					<input class="input__field input__field--juro" type="text" name="tel" />
+					<input class="input__field input__field--juro" onkeydown="onlyNum();" type="text" name="tel" />
 					<label class="input__label input__label--juro">
 						<span class="input__label-content input__label-content--juro">电话</span>
 					</label>
@@ -75,7 +75,6 @@
 				inputEl.addEventListener( 'focus', onInputFocus );
 				inputEl.addEventListener( 'blur', onInputBlur );
 			} );
-
 			function onInputFocus( ev ) {
 				classie.add( ev.target.parentNode, 'input--filled' );
 			}
@@ -86,6 +85,13 @@
 				}
 			}
 		})();
+	</script>
+	<script language=javascript>
+	function onlyNum()
+	{
+ 		 if(!((event.keyCode==8)||(event.keyCode>=48&&event.keyCode<=57)||(event.keyCode>=96&&event.keyCode<=105)))
+   		 event.returnValue=false;
+	}
 	</script>
 	</body>
 </html>
