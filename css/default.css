@@ -89,7 +89,7 @@ a:hover,a:focus{color:#74777b;}
 .bgcolor-12{ background: #3498DB; color: #fff;}/*light blue*/
 /* Header */
 .htmleaf-header{
-	padding: 1em 190px 1em;
+	padding: 1em 190px 2em;
 	letter-spacing: -1px;
 	text-align: center;
 }
@@ -106,7 +106,7 @@ a:hover,a:focus{color:#74777b;}
 	display: block;
 	font-size: 60%;
 	font-weight: 400;
-	padding: 0.8em 0 0.5em 0;
+	padding: 0.8em 0 0 0;
 	color: #fff;
 }
 /*nav*/
@@ -227,7 +227,7 @@ a:hover,a:focus{color:#74777b;}
 
 @media screen and (max-width: 50em) {
 	.htmleaf-header {
-		padding: 3em 10% 4em;
+		padding: 3em 10% 0em;
 	}
 	.htmleaf-header h1 {
         font-size:2em;
