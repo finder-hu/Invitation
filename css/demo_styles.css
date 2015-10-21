@@ -92,7 +92,7 @@ EXAMPLE STYLES
 }
 @media only screen and (min-width: 768px) {
   .overlay .wrap {
-    margin: 15px auto 0;
+    margin: 150px auto 0;
   }
 }
 /******************************
