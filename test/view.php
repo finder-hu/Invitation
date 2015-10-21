@@ -1,12 +1,14 @@
-
+﻿
 <!DOCTYPE html>
 <html>
 <body>
 <?php
 	require_once 'conn.php';
-	$result = mysql_query("select * from '$table'",$conn);
+	$result = mysql_query("select * from $table",$conn);
 	echo "<table border=1 align='center'height='100%' width='100%'><tr>";
 	echo "<caption><em><h1>宾客名单</h1></em></caption>";
+	/*if($result)
+		echo "result成功 <br/>";*/
 	while($field = mysql_fetch_field($result)){
 		echo "<td >&nbsp;".$field->name."&nbsp;</td>";
 	}
