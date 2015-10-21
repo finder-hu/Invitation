@@ -21,7 +21,7 @@
 	}
 	echo "</tr></table>";
 	mysql_close($conn);
-	echo "<br><a href='index.html'>返回继续添加嘉宾</a>";
+	echo "<br><a href='../index.html'>返回首页</a>";
 ?>
 </body>
 </html>
