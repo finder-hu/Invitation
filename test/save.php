@@ -4,12 +4,11 @@
 <?php
 /*echo $_POST['name']."<br/>";
 echo $_POST['blessing']."<br/>";*/
+
+$name = $_POST['name'];
+$blessing= $_POST['blessing'];
+
 require_once 'conn.php';
-
-$name = check_input($_POST['name']);
-$blessing= check_input($_POST['blessing']);
-
-
 $sql = "INSERT INTO $table (Name, Blessing, Up)
 VALUES ('$name', '$blessing', '0')";
 //echo "这是sql的内容: ".$sql."<br/>";
