@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh">
 <head>
 	<meta charset="UTF-8">
@@ -12,12 +12,19 @@
     <link rel="stylesheet" href="css/demo1.css">
     <link rel="stylesheet" type="text/css" href="css/default.css">
     <link rel="stylesheet" type="text/css" href="css/baidu_map.css">
+   
+    <link rel="stylesheet" type="text/css" href="gallery/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="gallery/css/default.css">
+    <link rel="stylesheet" href="gallery/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="gallery/themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="gallery/themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="gallery/themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="gallery/css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="gallery/css/style.css" type="text/css" media="screen" />
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=UrcnFQG91pxhePxpfpI7bsXw"></script>
-	<!--[if IE]>
-		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
-	<![endif]-->
+	
 
 </head>
 <body class="dm-demo1">
@@ -35,11 +42,20 @@
 
 		<!-- Overlay (hidden by default)-->
         <section class="overlay" id="ov-topleft">
-            <div class="wrap">
-                <h1>Section 1</h1>
-                 
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h1>gallery</h1>
+</br>
+</br>
+</br>
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="images/sample-01.jpg" data-thumb="images/sample-01.jpg" alt="" />
+                    <img src="images/sample-02.jpg" data-thumb="images/sample-02.jpg" alt="" />
+                    <img src="images/sample-03.jpg" data-thumb="images/sample-03.jpg" alt="" data-transition="slideInLeft" />
+                    <img src="images/sample-04.jpg" data-thumb="images/sample-04.jpg" alt="" />
+                    <img src="images/sample-05.jpg" data-thumb="images/sample-05.jpg" alt="" />
+                </div>
             </div>
+          
 
             <button class="close"><span class="mfg-cancel"></span></button>
         </section>
@@ -47,7 +63,6 @@
         <section class="overlay" id="ov-topright">
             <div class="wrap">
                 <h1>Section 2</h1>
-
                 <form method="post" action="./test/save.php" name="adpeople">
                     姓名：<input type="text" name="name" ></input>
                     <br>
@@ -61,11 +76,12 @@
         </section>
 
         <section class="overlay" id="ov-btmleft">
+        <div class="wrap">
             <div class="mapwrap">
                 <h1>Section 3</h1>
                 <div id="map" class="baidumap"></div>
             </div>
-
+        </div>
             <button class="close"><span class="mfg-cancel"></span></button>
         </section>
 
@@ -84,10 +100,18 @@
         </div>
 	</div>
 	
-	<script src="http://libs.useso.com/js/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/demo.js"></script>
     <script type="text/javascript" src="js/baidu_map.js"></script>
+
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+            controlNavThumbs:false
+        });
+    });
+    </script>
 </body>
 </html>
