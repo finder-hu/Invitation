@@ -126,7 +126,7 @@ body.dm-demo1 .button:hover {
   background-color: #f90fa4;
 }
 body.dm-demo1 .overlay {
-  background-color: #f90fa4;
+  background-color: #8f065d;
 }
 body.dm-demo1 .nav-el {
   background-color: #8f065d;
@@ -142,8 +142,8 @@ body.dm-demo1 .nav-el.active {
   z-index: 11;
 }
 body.dm-demo1 .backtoarticle {
-  border-color: #16a085;
-  color: #16a085;
+  border-color: #8f065d;
+  color: #8f065d;
 }
 body.dm-demo1 .backtoarticle:hover {
   color: #f90fa4;
