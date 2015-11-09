@@ -15,7 +15,7 @@ VALUES ('$name', '$blessing', '0')";
 //mysql_query("insert into blessings set name='$name', blessing='$blessing'")
 if(mysql_query($sql, $conn))
 {
- echo "添加成功<a href='lingyun-yingyun-wedding.date'>点击返回</a>";
+ echo "添加成功<a href='http://lingyun-yingyun-wedding.date'>点击返回</a>";
 
 }
 else
