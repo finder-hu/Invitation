@@ -11,6 +11,11 @@ EXAMPLE STYLES
   width: 100%;
   height: auto;
 }
+
+.backimg{
+  width: 100%;
+  height: auto;
+}
 /*second-layer*/
 .second-layer{
   position: fixed;
