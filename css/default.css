@@ -96,7 +96,7 @@ a:hover,a:focus{color:#74777b;}
 .htmleaf-header h1 {
 	color: #f2f2f2;
 	font-weight: 600;
-	font-size: 2em;
+	font-size: 8em;
 	line-height: 1;
 	margin-bottom: 0;
 	font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
@@ -104,7 +104,7 @@ a:hover,a:focus{color:#74777b;}
 .htmleaf-header h1 span {
 	font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
 	display: block;
-	font-size: 60%;
+	font-size: 100%;
 	font-weight: 400;
 	padding: 0.8em 0 0 0;
 	color: #fff;
@@ -115,18 +115,18 @@ a:hover,a:focus{color:#74777b;}
 		padding: 2em 10% 0em;
 	}
 	.htmleaf-header h1 {
-        font-size:2em;
+        font-size:4em;
     }
 }
 
 @media screen and (max-width: 40em) {
 	.htmleaf-header h1 {
-		font-size: 1.5em;
+		font-size: 4em;
 	}
 }
 
 @media screen and (max-width: 30em) {
     .htmleaf-header h1 {
-        font-size:1.2em;
+        font-size:4em;
     }
 }
