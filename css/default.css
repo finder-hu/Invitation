@@ -46,8 +46,8 @@ body, html { font-size: 100%; 	padding: 0; margin: 0;}
 }
 
 body{
-	background: #f9f7f6;
-	color: #404d5b;
+	/*background: #f9f7f6;
+	color: #404d5b;*/
 	font-weight: 500;
 	font-size: 1.05em;
 	font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
@@ -89,7 +89,7 @@ a:hover,a:focus{color:#74777b;}
 .bgcolor-12{ background: #3498DB; color: #fff;}/*light blue*/
 /* Header */
 .htmleaf-header{
-	padding: 1em 190px 2em;
+	padding: 1em 190px 1em;
 	letter-spacing: -1px;
 	text-align: center;
 }
