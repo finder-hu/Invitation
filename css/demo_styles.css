@@ -12,10 +12,6 @@ EXAMPLE STYLES
   height: auto;
 }
 
-.backimg{
-  width: 100%;
-  height: auto;
-}
 /*second-layer*/
 .second-layer{
   position: fixed;
@@ -123,8 +119,8 @@ body.dm-demo1 {
   /*background: #1abc9c;*/
 }
 body.dm-demo1 .button {
-  color: #1abc9c;
-  background: #16a085;
+  color: #380224;
+  background: #380224;
 }
 body.dm-demo1 .button:hover {
   background-color: #f90fa4;
@@ -133,8 +129,8 @@ body.dm-demo1 .overlay {
   background-color: #f90fa4;
 }
 body.dm-demo1 .nav-el {
-  background-color: #f90fa4;
-  opacity: 0.6;
+  background-color: #8f065d;
+  opacity: 0.4;
   transition: background-color .3s ease-in;
   -moz-transition: background-color .3s ease-in;
   -webkit-transition: background-color .3s ease-in;
